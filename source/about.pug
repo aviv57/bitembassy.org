@@ -3,78 +3,43 @@ title: About
 alias: about/index.html
 ---
 
-mixin person(pic, name, url)
-  .person.clearfix
-    a.pic(href=url): img(src='img/people/'+pic)
-    p #[strong= name] –
-      block
-  hr
-
-.center
+.center(dir='rtl', style='text-align: right;').hebrew
   :markdown-it
-    The Bitcoin emBassy TLV is a grassroots mission to [offer a location](reach-us/)
-    where the community and enthusiasts can use, and organizes a variety of
-    [events and projects](projects/) for the community.
-    At the Bitcoin emBassy TLV all are welcome to share and talk about the decentralized digital currency.
+    שגרירות הביטקוין היא מרכז קהילתי, לימודי והסברתי המוקדש למטבע המבוזר ביטקוין. השגרירות, ממוקמת בעיר תל אביב-יפו, הוקמה בשנת 2013 על ידי פעילי קהילת הביטקוין בישראל במטרה להנגיש את התחום לציבור הרחב, לספק מקום מפגש לביטקוינרים יזמים מפתחים וכל מי שרוצה להשתמש בביטקוין ולקדם את התחום בישראל.
 
+    היסטוריה ורקע
+    מתחם השגרירות נפתח רשמית לקהל הרחב בדצמבר 2013 ברחוב אחוזת בית 1 בתל אביב, בסמוך למגדל שלום מאיר ולבורסה לניירות ערך. 
+    ההקמה נעשתה במתחם שהיה בעבר המשרד של איל יונה, שהוביל את התהליך וייסד את המקום. לימים השכירות במקום עברה לחברת ביטס-אוף-גולד, שתרמה רבות גם פיננסית וגם תפעולית.
 
-  p
-    a.white-button(href='gallery.html') Photos
-    = ' '
-    a.white-button(href='manifest.html') Our manifest
-    = ' '
-    a.white-button(href='press.html') Press
+    עם פתיחתה, הפכה השגרירות לאחד המרכזים הפיזיים הראשונים בעולם שהוקדשו כולם להסברה ופעילות סביב מטבע הביטקוין. המקום פעל במתכונת של מרכז ללא מטרות רווח, והתבסס במידה רבה על תרומות ועל עבודת מתנדבים, שהשתתפו בתהליך קבלת ההחלטות, הפקת אירועים, העברת הרצאות ויציקת תוכן ברוח הקוד הפתוח.
 
-  h2 The Ambassadors
+    פעילות
+    שגרירות הביטקוין משמשת כעוגן המרכזי של הקהילה בישראל ומקיימת מגוון פעילויות:
 
-+person('ayal-segev1.jpg', 'Ayal Segev', 'http://www.yona3.com/').
-  Founder of the Bitcoin emɃassy TLV and a core member of the Israeli bitcoin community.
-  Architect, artist and co-founder of yona|3 architecture studio.
+    הסברה וחינוך: 
+    העברת הרצאות, סדנאות וימי עיון חינמיים המיועדים לקהל הרחב – החל מהסברים בסיסיים על "מהו ביטקוין" ועד לסדנאות טכניות כגון פתיחת ארנקים והקמת צומת ביטקוין.
 
-+person('gil-assayag-150x150.jpg', 'Gil Assayag', 'https://www.facebook.com/gil.assayag').
-  programmer, security expert, biologist, and all around friendly guy,
-  Gil Assayag spends much of his time helping the community for free, as well as leading workshops at the emBassy.
+    מפגשי קהילה (Meetups): המקום מארח באופן קבוע מפגשים של יזמים, מתכנתים, כלכלנים, אנתרופולוגים ומשפטנים הדנים בהיבטים הטכנולוגיים, הרגולטוריים והכלכליים של עולם הנכסים הדיגיטליים.
+    
+    בכל יום ראשון יש מפגש שבועי גדול שנקרא סאטושי סקוור בו מתאספים חברי הקהילה.
 
-+person('asaf.jpg', 'Assaf Bahat').
-  Bitcoin evangelist, coder, believes in the crypto revolution. Loves the embassy.
+    השגרירות ערכה האקתון שנתי נושא פרסים המוקדש כולו לפיתוחים בתחום
 
-+person('sarah.png', 'Sarah Wisner').
-  Enthusiast & activist , here to watch the future flourish live at our door step and help people connect.
-  Saving my coins for space travel.
+    ארגון והפקה של מסיבות לציון תאריכים סמליים כגון
+    ימי הולדת לביטקוין בתאריך 3.1 יום יצירת הבלוק הראשון
+    חגיגות לציון יום כתיבת הספר הלבן
+    יום הפיצה 
+    יום העלמות סאטושי
+    וכמובן מסיבות חצייה
 
-+person('gitai-zach.jpg', 'Gitai Zach', 'http://il.linkedin.com/in/gitaizakh').
-  Co-founder (& co-manager) at the Bitcoin emɃassy, founder of Byte (Cryptocurrency Innovation Lab).
-  Nice guy & people person, tech-enthusiastic, believer and much more. Always a student.
+    כספומט ביטקוין: בשגרירות הותקן כספומט הביטקוין הראשון בישראל, המאפשר לעוברים ושבים לרכוש את המטבע תמורת כסף מזומן (שקלים).
 
-+person('Gadi.png', 'Gadi Ruschin').
-  has over 10 years of experience in the global trading and the service providers sector for the energy and textile fields.
-  Ruschin owns trading offices in Shanghai, Cairo and Tel-Aviv and is a supplier for some of the biggest brands in textile.
-  Ruschin is a co-founder and CEO of OGY financial services LTD and is very active in the bitcoin community.
+    נקודת מידע וסיוע: פעילי המקום מסייעים לאנשים פרטיים שעושים את צעדיהם הראשונים כיצד לפתוח ארנק ביטקוין בצורה נכונה ומאובטחת ולתפעל אותו, וכיצד להימנע מטעויות והונאות בתחום.
 
-.split.clearfix
-  .left
-    h3.center Honorary Ambassadors
+    השגרירות היא גם הבית של איגוד הביטקוין הישראלי 
 
-    +person('meni-rosenfeld.jpg', 'Meni Rosenfeld', 'http://il.linkedin.com/in/menir').
-      founder of the Israeli community and the Israeli Bitcoin Association,
-      Meni Rosenfeld is the most respected member of our community and we are proud to honor him.
+    השגרירות מילאה תפקיד מפתח בהפיכתה של ישראל לאחד המרכזים הטכנולוגיים המובילים בעולם בתחום. מתוך המפגשים והקשרים שנוצרו בין כותלי השגרירות צמחו עשרות מיזמים, חברות הזנק (Start-ups) וקרנות הון סיכון ישראליות הפועלות בזירה הבינלאומית.
+    כמו כן, המרכז שימש ככתובת עבור רשויות המדינה,  גופי תקשורת, אקדמיה, בנקים, וכל מי שביקשו ללמוד את התחום ולהבין את השלכותיו על הכלכלה המסורתית.
 
-    +person('ron-gross.jpg', 'Ron Gross', 'http://www.chiefninjaofficer.com/').
-      Continuously involved with Bitcoin since March 2011, spreading the word, knowledge, and love of Bitcoin.
-      Ron co-founded the Israeli Bitcoin community and foundation.
-      As of June 2014 Ron is the Co-Founder and Executive Director of the Mastercoin project.
+    לצער רבים השגרירות גם נתנה בעבר במה להצגת מיזמים שבדיעבד לא צלחו, וגרמו לאנשים אובדן כסף ועוגמת נפש. תחום הביטקוין והקריפטו תמיד היו השקעות עם סיכונים רגולטוריים וטכנולוגיים. עם השנים נעשו מאמצים לוודא שהמרצים לא משתמשים בבמה שניתנה להם כדי להציג מצג שווא כאילו השגרירות, ביטס-אוף-גולד, או קבוצת השגרירים הביעו תמיכה ואמון במיזם שלהם. Don't Trust, Verify.
 
-    +person('jonathan-rouach.jpg', 'Jonathan Rouach', 'https://www.linkedin.com/in/jonathanrouach').
-      Founder of Bits of Gold, the largest bitcoin exchange in Israel.
-      Jonathan Rouach is an experienced developer, manager, and entrepreneur.
-
-  .right
-    h3.center Former Ambassadors
-
-    +person('moran-shaked.jpg', 'Moran Shaked', 'http://www.linkedin.com/pub/moran-shaked/65/109/a09').
-      founder of ‘Miss Bitcoin’ and the founder of Buy The Way.
-      A copywriter & graphic designer with over a decade’s experience in brand promotion, advertising concepts and social network management.
-
-    +person('ariel-horwitz.jpg', 'Ariel Horwitz', 'http://ariel.ninja/')
-      Founder of AlefBit, former community manager for the IBA, amBassador, and long time activist of the Israeli bitcoin community.
-      Ariel deeply believes in decentralized technologies and is currently paying full attention to crypto-finnacial technologies.
